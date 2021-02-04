@@ -1,0 +1,7 @@
+- Informações extras
+- Configurações
+
+<img src="atributo" alt="atributo">  --> src e alt são os atributos
+
+<input type="text" disable> --> disable é um atributo booleano, não necessita de conteúdo
+
