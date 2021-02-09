@@ -45,5 +45,5 @@
     * Se qualquer servidor morrer e esses sistemas estiverem colaborando por meio dele, qualquer um dos repositórios do cliente poderá ser copiado de volta para o servidor 
     * Cada clone é de fato um backup completo de todos os dados 
     * Clientes usam o estado mais recente dos arquivos 
-    * 
+
 

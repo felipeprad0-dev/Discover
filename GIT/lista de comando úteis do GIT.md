@@ -44,22 +44,34 @@
     * git status ---> verificará o estado dos arquivos e diretórios
 
 ## Adicionar Arquivo/Diretório (Staged Area)
-    * git add meu_arquivo.txt ---> adicionar um arquivo específico
-    * git add meu_diretório ---> adicionar um diretório específico
-    * git add . ---> adicionar todos os arquivos/diretórios
-    * git add -f arquivo_no_gitignore.txt ---> adicionar um arquivo que está listado no .gitignore (geral ou do repositório)
+    * git add meu_arquivo.txt ---> adicionar ou rastrear um arquivo específico
+    * git add meu_diretório ---> adicionar ou rastrear um diretório específico
+    * git add . ---> adicionar ou rastrear todos os arquivos/diretórios
+    * git add -f arquivo_no_gitignore.txt ---> adicionar ou rastrear um arquivo que está listado no .gitignore (geral ou do repositório)
 
 ## Commitar Arquivo/Diretório
     * git commit meu_arquivo.txt ---> commitar um arquivo 
     * git commit meu_arquivo.txt meu_outro_arquivo.txt ---> commitar mais de um arquivo
-    * git commit meuarquivo.txt -m "minha mensagem de commit" ---> commitar informando mensagem
+    * git commit -m "minha mensagem de commit" ---> commitar informando mensagem
+    * git commit -am "minha mensagem de commit" ---> adicionar os arquivos modificados e commitá-los. Atalho para `git add .` e `git commit -m`
 
 ## Remover Arquivo/Diretório
     * git rm meu_arquivo.txt ---> remover arquivo
     * git rm -r diretório ---> remover diretório
+    * git clean -n ---> mostra arquivos não rastreados que serão deletados permanentemente 
+    * git clean -f ---> deleta os arquivos não rastreados permanentemente
+    
+## Reverter um Commit
+    * git revert HEAD~n ---> onde 'n' é a posição do commit
+    * git log --oneline hash ---> traz o(s) arquivo(s) do commit citado 
+  
+## Remover Arquivo da Staged Area
+    * git rm --chached meu_arquivo.txt ---> remover arquivo da Staged Area
 
 ## Visualizar Histórico
-    * git log ---> visualiar histórico de commits 
+    * git log ---> visualizar histórico de commits 
+    * git show hash ---> visualizar detalhes das alterações em um commit
+    * git show hash --color-words ---> mostrar exatamente as palavras modificadas
     * git log -p -2 ---> exibir histórico com diff das duas últimas alterações 
     * git log --stat ---> exibir resumo do histórico (hash completa, autor, data, comentário e quantidade de alterações (+/-))
     * git log --pretty=oneline ---> exibir informações resumidas em uma linha (hash completa e comentário)
@@ -80,7 +92,7 @@
 
 ## Desfazendo Operações
     Desfazendo alteração local (working directory)
-    * git checkout -- meu_arquivo.txt ---> este comando deve ser utilizando enquanto o arquivo não foi adicionado na staged area
+    * git checkout -- meu_arquivo.txt ---> este comando deve ser utilizado enquanto o arquivo não foi adicionado na staged area
     
     Desfazendo alteração local (staging area)
     * git reset HEAD meu_arquivo.txt ---> este comando deve ser utilizando quando o arquivo já foi adicionado na staged area
@@ -181,7 +193,7 @@
     
 
 ## Reescrevendo o Histórico 
-    * git commit --amend -m "Minha nova mensagem" ---> alterar mensagens de commit 
+    * git commit --amend -m "Minha nova mensagem" ---> alterar ou corrigir mensagens de commit 
     * git rebase -i HEAD~3 ---> alterar os três últimos commits
         - O editor de texto será aberto com as linhas representando os três últimos commits. pick f7f3f6d changed my name a bit
                                                                                              pick 310154e updated README formatting and added blame
