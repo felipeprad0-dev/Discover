@@ -1,16 +1,16 @@
 # At-rules
 
-    * Está relacionado ao comportamento do CSS 
-    * Começa com o sinal de '@' seguido do identificador e valor 
+    * It is related to behavior of CSS 
+    * Starts with the `@` sign, followed by the identifier and value
 
 
-## Exemplos comuns 
+## Common examples 
 
-    - @ import     /* incluir um CSS externo */
+    - @ import     /* include a external CSS file */
 
-    - @media       /* regras condicionais para dispositivos */
+    - @media       /* Conditional rules to devices */
 
-    - @font-face   /* fontes externas */
+    - @font-face   /* external fonts */
 
     - @keyframes   /* Animation */
 

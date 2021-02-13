@@ -1,3 +1,3 @@
-## Apertando F12 no navegador
+## Pressing F12 on Browser
 
-    * As regras devem ser lidas de baixo para cima
+    * Rules must be read from top to bottom

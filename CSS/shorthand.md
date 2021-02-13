@@ -1,8 +1,8 @@
 # Shorthand 
 
-    * Junção de propriedades 
-    * Resumido 
-    * Legível
+    * Merging properties
+    * Summed up 
+    * Readable
 
 
 ```CSS
@@ -31,13 +31,13 @@
 ```
 
 
-## Detalhes
+## Details
 
-    * Não irá considerar propriedades anteriores 
-    * Irá assumir valor padrão caso não há valor especificado 
-    * Geralmente a ordem descrita não importa, mas se houver muitas propriedades com valores semelhantes, poderemos encontrar problemas
+    * Will not consider previous properties 
+    * Will assume default value if no value is specified 
+    * It doesn't usually matter the order described, but if there are many properties with similar values, we may find problems
 
 
-## Propriedades que aceitam shorthand  
+## Properties that allows shorthand  
 
     all, animation, background, border, border-block-end, border-block-start, border-bottom, border-color, border-image, border-inline-end, border-inline-start, border-left, border-radius, border-right, border-style, border-top, border-width, column-rule, columns, flex, flex-flow, font, gap, grid, grid-area, grid-column, grid-row, grid-template, list-style, margin, mask, offset, outline, overflow, padding, place-content, place-items, place-self, scroll-margin, scroll-padding, text-decoration, text-emphasis, transition.

@@ -1,16 +1,16 @@
 # Box Model
 
-* O CSS trabalha com ideia de caixas
-* Você irá perceber que (quase) tudo são caixas no CSS 
-* Posicionamentos, tamanhos, espaçamentos, bordas, cores
-* Caixa pode ficar ao lado uma da outra, ou acima 
-* Elementos HTML são caixas
+* CSS works with the box ideas
+* You will realize that (almost) everything are boxes in CSS 
+* Placements, sizes, spacing, borders, colors
+* Boxes can be next to each other, or above and below 
+* HTML elements are boxes
 
 ```HTML
 
-<h1>Evolua rápido</h1>
-<p>Descrição</p>
-<button>Embarcar</button>
+<h1>Evolve Fast</h1>
+<p>Description</p>
+<button>To Board</button>
 
 ```
 

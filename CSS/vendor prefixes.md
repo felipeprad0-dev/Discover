@@ -1,13 +1,13 @@
 # Vendor Prefixes 
 
-    * Permite que browsers adicione `features` a fim de colocar em uso alguma novidade que vemos no CSS 
+    * Allows browsers to add `features` in order to put to use some novelty that we see in the CSS
         - webkit
         - moz
         - ms
         - o
 
 
-## Exemplo 
+## Example 
 
 ```CSS
 p {
