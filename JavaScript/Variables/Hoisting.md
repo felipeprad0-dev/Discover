@@ -1,6 +1,6 @@
 # Hoisting
 
-    Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope (to the top of the current scope or the current function)
+_italic Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope (to the top of the current scope or the current function)_
 
 
     In JavaScript, a variable can be declared after it has been used. 
