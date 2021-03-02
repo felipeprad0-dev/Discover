@@ -1,6 +1,6 @@
 # Callback Function
 
-_Callback function is when we want to call a function inside another function. We declare a the function with a parameter that will be the name of the callback, so we run the function declaring another function inside._
+_Callback is a function declared as parameter for another function. Callbacks are declared as functions to be executed after a certain event. It will be wait for something happen to act (run)._
 
 ```JS 
 
@@ -21,3 +21,16 @@ _In another words_
 `name` is `() => { console.log("I'm in a callback");}`
 
 So, to run it: `name()`
+
+
+_-------------------------- ANOTHER CASE --------------------------_
+
+```JS
+
+function callback(e) {
+    alert('An event happened' + e.type);
+}
+
+window.addEventListener('click', callback);
+
+```
